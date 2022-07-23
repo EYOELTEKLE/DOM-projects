@@ -1,0 +1,78 @@
+*
+{
+	margin: 0;
+	box-sizing: border-box;
+}
+h1
+{
+	text-align: center;
+	font-size: 2rem;
+}
+.container-calc
+{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	display: grid;
+	border: 1px solid black;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	transform: translate(-50%,-50%);
+}
+.container-calc > div
+{
+	
+	position: relative;
+}
+.input
+{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.input > input
+{
+	height: 100%;
+	width: 100%;
+	background: gray;
+	color: white;
+}
+input:focus
+{
+	outline: none;
+}
+
+button
+{
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 800;
+	padding: .6rem;
+}
+
+.special > button
+{
+	background: blue;
+	color: white;
+}
+.special > button:hover
+{
+	
+	color: red;
+}
+.numbers > button
+{
+	background: black;
+	color: white;
+}
+.numbers > button:hover
+{
+	background: yellow;
+	color: red;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="index.js" defer></script>
+	<title>Document</title>
+</head>
+<style>
+	*
+	{
+		margin: 0;
+
+	}
+	body
+	{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+
+	}
+	img
+	{
+		opacity: 0.2;
+		z-index: -2;
+		object-fit: cover;
+		position: absolute;
+
+	}
+	.class
+	{
+		z-index: 4;
+		height: 180px;
+		width: 290px;
+		border: 3px solid black;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: white;
+		border-radius: 10%;
+		padding: .9rem .6rem;
+		
+	}
+	.text
+	{
+		margin-left: 34px;
+		margin-bottom: 23px;
+		margin-right: 34px;
+		margin-top: 34px;
+		font-size: 1rem;
+		font-family: sans-serif;
+		font-weight: 600;
+	}
+	.author
+	{
+		font-size: 1.3rem;
+		font-family: sans-serif;
+		font-weight: 400;
+		margin-left: 34px;
+	}
+	button{
+		background: black;
+		color: yellow;
+		margin-top: 2px;
+		margin-bottom: 9px;
+	}
+	button:hover
+	{
+		color: green;
+	}
+	h1
+	{
+		position: absolute;
+		top: 0;
+		font-family: sans-serif;
+		font-weight: 700;
+		font-size: 2.5rem;
+		border-bottom: 2px solid black;
+		margin-top: 5px;
+	}
+</style>
+<body>
+<img src="https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000" alt="">
+<h1>Quote Generator</h1>
+<div class="class">
+	<p class="text"></p>
+	<p class="author"></p>
+	<button>Generate</button>
+</div>
+
+</body>
+</html>
