@@ -2,6 +2,7 @@
 {
 	margin: 0;
 	box-sizing: border-box;
+	background: #BFBFBF;
 }
 h1
 {
@@ -57,13 +58,13 @@ button
 
 .special > button
 {
-	background: blue;
+	background: #8024AB;
 	color: white;
 }
 .special > button:hover
 {
 	
-	color: red;
+	color: black;
 }
 .numbers > button
 {
@@ -72,7 +73,7 @@ button
 }
 .numbers > button:hover
 {
-	background: yellow;
-	color: red;
+	background: #FFF9AA;
+	color: #AA4F00;
 }
 

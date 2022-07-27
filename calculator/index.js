@@ -1,6 +1,28 @@
 const input = document.querySelector("input");
-
-input.addEventListener("change", (e) => 
+const submit = document.querySelector(".submit");
+const numbers = document.querySelectorAll(".special");
+const clear = document.querySelector(".clear");
+let inputText;
+const keyup = (e) => 
 {
-	console.log(e.target.value)
+	inputText = e.target.value;
+	console.log(inputText);
+
+}
+window.onkeyup = keyup;
+
+submit.addEventListener("click", () => 
+{
+
+	let NumberParser = /[0-9]+/g;
+	let operations = /[/*-+]+/g;
+
+
 })
+clear.addEventListener("click", () => 
+{
+	inputText = ""
+	input.value = inputText;
+})
+
+numbers.addEventListener("click", (e) => input.innerHTML = e.target.value);
