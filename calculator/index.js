@@ -6,8 +6,6 @@ const special = document.querySelectorAll(".spec")
 let inputText;
 const keyup = (e) => 
 {
-
-	e.stopPropagation()
 	inputText = e.target.value;
 	
 	let NumberParser = /[0-9]+/g;
@@ -23,7 +21,6 @@ const keyup = (e) =>
 		input.value = val.join('')
 
 	}
-
 }
 window.onkeyup = keyup;
 
@@ -43,9 +40,6 @@ submit.addEventListener("click", () =>
 
 		}
 	}
-
-
-
 })
 clear.addEventListener("click", () => 
 {
@@ -54,25 +48,20 @@ clear.addEventListener("click", () =>
 })
 numbers.forEach((item) => {
 
-
+		
 		let i = item.addEventListener('click', (e) => 
 		{
-
 			input.value = input.value + item.innerHTML;
 		})
 	});
 special.forEach((item) => {
 		let i = item.addEventListener('click', (e) => 
 		{
-
 			input.value = input.value + item.innerHTML;
 		})
 	});
-
+input.disabled = true;
 /**
-
-Backpsace added
 remaining parsing logic
-issue both key press and input event firing!!
-
+fixed two events from firing off
 **/
